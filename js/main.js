@@ -1,4 +1,4 @@
-import Ladrillo from "./ladrillo.js";
+import Ladrillo from "./Ladrillo.js";
 
 const btnCalcular = document.getElementById("btn-calcular");
 let result  = document.getElementById("respuesta")
