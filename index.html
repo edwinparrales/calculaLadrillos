@@ -1,22 +1,52 @@
-<!DOCTYPE html> 
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Calcula muro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <fieldset>
-        <legend>Datos</legend>
-        <input type="number" placeholder=" valor 1" id="val1" value="0">
-        <input type="number" placeholder=" valor 2" id="val2"value="0" >
-    </fieldset>
-    <button id="btn-sum" onclick="sumar(event)">Sumar</button>
-<div id="resultado">
+    <div class="container card mb-3">
+
+   
+    <h2 class="display-3">Calcular cantidad de ladrillos por metro cuadrado</h2>
+    <div class="col-md-6">
+        <label class="form-label"  for="altura">Altura del ladrillo en cm</label>
+        <input class="form-control"    type="number" name="altura" id="altura">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="junVertical">Juntura Vertical del ladrillo en cm</label>
+        <input class="form-control" type="number" name="junVertical" id="junVertical" value="1.5">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="largo">Largo del ladrillo en cm</label>
+        <input class="form-control" type="number" name="largo" id="largo">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label" for="junHorizontal">Juntura Horizontal del ladrillo en cm</label>
+        <input class="form-control" type="number" name="junHorizontal" id="junHorizontal" value="1.5">
+    </div>
+    
+    <div class="col-md-6">
+        <label class="form-label" for="grosor">Grosor del ladrillo en cm</label>
+        <input class="form-control" type="number" name="Grosor" id="grosor">
+    </div>
+    
+    <div class="col-md-6">
+        <div>
+            <button  class="btn btn-primary" type="submit" id="btn-calcular">Calcular</button>
+        </div>
+        <label class="form-label" for="cantidad">Cantidad de ladrillos por mt cuadrado</label>
+        <div id="respuesta" class="alert alert-success" role="aler">
+
+        </div>
+  
+
+    </div>
 
 </div>
-    <script src="./js/main.js"></script>
+<script src="./js/main.js" type="module"></script>
 </body>
 </html>
