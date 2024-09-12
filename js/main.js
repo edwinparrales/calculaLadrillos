@@ -1,4 +1,24 @@
-import Ladrillo from "./ladrillo.js";
+//import Ladrillo from "./Ladrillo.js";
+
+
+ class Ladrillo{
+
+    constructor(alto,largo,grosor){
+       this.alto=alto;
+       this.largo=largo;
+       this.grosor=grosor;
+    }
+
+    obtenerAlto(){
+        return this.alto/100;
+    }
+    obtenerLargo(){
+        return this.largo/100;
+    }
+    obtenerGrosor(){
+        return alto/100;
+    }
+}
 
 const btnCalcular = document.getElementById("btn-calcular");
 let result  = document.getElementById("respuesta")
