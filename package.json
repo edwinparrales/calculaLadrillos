@@ -1,0 +1,39 @@
+{
+  "name": "calculaladrillos",
+  "version": "1.0.0",
+  "description": "aplicacion para calcular cantidad de ladrillo para muros por metros cuadrado segun las medidas del ladrillo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinparrales/calculaLadrillos.git"
+  },
+  "keywords": [
+    "calcula",
+    "cantidad",
+    "de",
+    "ladrillos",
+    "por",
+    "metro",
+    "cuadrado",
+    "segun",
+    "medidas",
+    "del",
+    "ladrillo",
+    "en",
+    "cm",
+    "y",
+    "mtros"
+  ],
+  "author": "EpvTecnologia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edwinparrales/calculaLadrillos/issues"
+  },
+  "homepage": "https://github.com/edwinparrales/calculaLadrillos#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
