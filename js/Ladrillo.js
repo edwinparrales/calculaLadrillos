@@ -1,4 +1,4 @@
-export default class Ladrillo{
+export  class Ladrillo{
 
     constructor(alto,largo,grosor){
        this.alto=alto;

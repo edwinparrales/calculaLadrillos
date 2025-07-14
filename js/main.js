@@ -1,4 +1,5 @@
-import Ladrillo from "./ladrillo.js";
+import {Ladrillo} from "./Ladrillo";
+
 
 const btnCalcular = document.getElementById("btn-calcular");
 let result  = document.getElementById("respuesta")
@@ -13,10 +14,10 @@ let calCantLadrillos = ()=>{
     let ladrillo = new Ladrillo(altura.value,largo.value,10);
   
    
-    let alturaTotal = ladrillo.obtenerAlto()+(junVer.value/100);
-    let largoTotal = ladrillo.obtenerLargo()+(junHor.value/100);
-    const divisor = alturaTotal*largoTotal;
-    let cant = 1/divisor;
+    let alturaTotalMtros = ladrillo.obtenerAlto()+(junVer.value/100);
+    let largoTotalMtros = ladrillo.obtenerLargo()+(junHor.value/100);
+    const areaMtrosCuadrados = alturaTotalMtros*largoTotalMtros;
+    let cant = 1/areaMtrosCuadrados;
     cant = Math.ceil(cant);
     console.log("can",cant);
     result.innerHTML=`<h2>${cant}</h2>`
